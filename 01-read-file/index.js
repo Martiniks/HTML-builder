@@ -6,7 +6,6 @@ const pathToText = path.join(__dirname, 'text.txt');
 let  streamFile = fs.createReadStream(pathToText,'utf8');
 
 streamFile.on('data', function (chunk) {
-  // console.log('>>', chunk.length);
   console.log(chunk);
 });
 
